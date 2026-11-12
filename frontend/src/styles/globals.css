@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/*
+ * Core design palette — exactly 7 colors.
+ * Declared as Tailwind v4 theme tokens (CSS variables emitted on :root),
+ * so every token is usable both as a utility (bg-ink, text-brand, …) and
+ * as a plain CSS variable (var(--color-ink)).
+ *
+ * Black + white are the primaries; #FFBE00 is the Irancell brand accent.
+ * The four grays come from the approved Figma E-Commerce UI Kit.
+ */
+@theme {
+  --color-ink: #0c0c0c; /* primary black: headings, primary buttons, footer */
+  --color-paper: #ffffff; /* primary white: page and card backgrounds */
+  --color-brand: #ffbe00; /* Irancell yellow: accents, CTAs, active states */
+  --color-coal: #2e2e2e; /* charcoal: secondary text, hover states */
+  --color-ash: #979797; /* muted text, placeholders, empty stars */
+  --color-line: #e4e4e4; /* hairline borders, dividers, outlines */
+  --color-smoke: #f5f5f5; /* light surface: image wells, subtle fills */
+}
+
+@theme inline {
+  --font-sans: var(--font-vazirmatn);
+  --font-mono: var(--font-vazirmatn);
+}
+
+body {
+  font-family:
+    var(--font-vazirmatn),
+    'Segoe UI',
+    Tahoma,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ash);
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}

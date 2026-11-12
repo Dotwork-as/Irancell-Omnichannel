@@ -1,0 +1,54 @@
+# Irancell Omnichannel — single-command local execution.
+#   up:   docker compose up --build -d
+#   ps:   docker compose ps
+#   logs: docker compose logs -f
+#   down: docker compose down        (SQLite data survives in the volume)
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      DATABASE_PATH: /data/omnichannel.db
+      CORS_ALLOWED_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+      # Plain-HTTP local execution: the Secure cookie flag must stay
+      # off or browsers will drop the guest session (docs/API.md §5).
+      COOKIE_SECURE: "false"
+      APP_SEED_DEMO_ORDERS: "true"
+      # Optional Turnstile enforcement (fail-closed). Do NOT commit
+      # real secrets — pass them via an env_file or your shell:
+      # TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
+    volumes:
+      - omnichannel-data:/data
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/api/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # Baked into the client bundle: the URL the user's browser
+        # uses to reach the backend (host-mapped port 8080).
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:8080/api/v1
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  omnichannel-data:

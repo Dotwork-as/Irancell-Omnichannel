@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "default": "Irancell Store",
+    "template": "%s | Irancell Store",
+    "description": "Buy iPhones from the official Irancell store — one unified experience",
+    "products": {
+      "title": "Shop",
+      "description": "Buy all iPhone models from the official Irancell store"
+    },
+    "product": {
+      "title": "iPhone 15 Pro Max",
+      "description": "Buy the Apple iPhone 15 Pro Max with authenticity guarantee and free shipping from the Irancell store"
+    },
+    "cart": {
+      "title": "Shopping Cart"
+    },
+    "checkout": {
+      "title": "Checkout"
+    },
+    "success": {
+      "title": "Order Placed"
+    }
+  },
+  "header": {
+    "brand": "Irancell",
+    "nav": {
+      "home": "Home",
+      "shop": "Shop"
+    },
+    "search": "Search",
+    "cart": "Shopping cart",
+    "switchToEn": "Switch the language to English",
+    "switchToFa": "Switch the language to Persian",
+    "searchPlaceholder": "Search products…"
+  },
+  "footer": {
+    "brand": "Irancell",
+    "about": "The official Irancell store: buy iPhones with an authenticity guarantee, fast delivery and 24/7 support in one unified experience.",
+    "services": {
+      "title": "Customer Services",
+      "items": [
+        "Special offers",
+        "Gift cards",
+        "Installment payments",
+        "Monthly prize draw",
+        "Loyalty club"
+      ]
+    },
+    "guide": {
+      "title": "Shopping Guide",
+      "items": [
+        "Track your order",
+        "Shipping terms",
+        "Return policy",
+        "Authenticity guarantee",
+        "Frequently asked questions"
+      ]
+    },
+    "copyright": "© 2026 Irancell Store — All rights reserved."
+  },
+  "home": {
+    "heroBadge": "The professional iPhone experience",
+    "heroTitle": "iPhone 17 Pro Max",
+    "heroSubtitle1": "Titanium",
+    "heroSubtitle2": "Strength in perfect form",
+    "heroDescription": "Titanium design, the powerful A17 Pro chip and a 48MP camera — a professional iPhone experience at the Irancell store.",
+    "heroImageAlt": "iPhone 14 Pro — homepage hero image",
+    "heroCtaPrimary": "Buy it now",
+    "heroCtaSecondary": "View the store",
+    "features": {
+      "shipping": {
+        "title": "Fast delivery",
+        "text": "Same-day delivery in Tehran and nationwide shipping"
+      },
+      "authenticity": {
+        "title": "Authenticity guarantee",
+        "text": "Genuine iPhones with valid warranty and support"
+      },
+      "payment": {
+        "title": "Secure payment",
+        "text": "An easy shopping experience with diverse payment methods"
+      }
+    },
+    "promo": {
+      "title": "Irancell Special Offers",
+      "text": "Choose your favourite iPhone and enjoy the special offers of the Irancell store.",
+      "cta": "View offers"
+    }
+  },
+  "products": {
+    "title": "All iPhones",
+    "storageGb": "GB",
+    "toman": "Toman",
+    "searchingFor": "Search results for “{q}”",
+    "error": "Failed to load products",
+    "retry": "Retry",
+    "noResults": "No products found",
+    "noResultsHint": "Try a different search.",
+    "description": "Buy all iPhone models from the official Irancell store"
+  },
+  "productDetail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbShop": "Shop",
+    "breadcrumbLabel": "Page path",
+    "badge": "Special offer",
+    "chooseColor": "Choose a color",
+    "chooseStorage": "Storage capacity",
+    "addToCart": "Add to cart",
+    "buyNow": "Quick buy",
+    "shippingNote": "Free shipping across Iran",
+    "warrantyNote": "18-month official Irancell warranty",
+    "specsTitle": "Technical Specifications",
+    "reviewsTitle": "Customer Reviews",
+    "ratingOutOf": "out of 5",
+    "reviewCountUnit": "reviews",
+    "outOfStock": "Out of stock",
+    "adding": "Adding…",
+    "added": "Added to cart",
+    "notFound": "Product not found",
+    "notFoundDescription": "This product is not available in the store.",
+    "browse": "Browse the store",
+    "error": "Failed to load product",
+    "retry": "Retry",
+    "inStockUnit": "in stock"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "remove": "Remove from cart",
+    "summaryTitle": "Order Summary",
+    "subtotal": "Cart subtotal",
+    "totalLabel": "Total payable",
+    "checkoutCta": "Proceed to checkout",
+    "backToShop": "Back to the store",
+    "toman": "Toman",
+    "itemCountLabel": "Items",
+    "loading": "Loading your cart…",
+    "error": "Failed to load the cart",
+    "retry": "Retry",
+    "empty": "Your cart is empty",
+    "emptyDescription": "You have not added any products yet.",
+    "browse": "Browse the store"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "stepperLabel": "Checkout steps",
+    "steps": [
+      "Recipient",
+      "Shipping",
+      "Confirmation"
+    ],
+    "address": {
+      "title": "Recipient information",
+      "firstName": "First name",
+      "firstNamePlaceholder": "e.g. Sara",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "e.g. Mohammadi",
+      "phone": "Mobile number",
+      "phonePlaceholder": "09123456789",
+      "fullAddress": "Full address",
+      "fullAddressPlaceholder": "Street, alley, number, unit"
+    },
+    "shipping": {
+      "title": "Shipping method"
+    },
+    "back": "Back",
+    "next": "Next step",
+    "payAndSubmit": "Pay and place order",
+    "totalWithExpress": "108,439,000 Toman",
+    "emptyCart": "Your cart is empty",
+    "emptyCartDescription": "Add a product to your cart first.",
+    "browse": "Browse the store",
+    "shippingError": "Failed to load shipping methods",
+    "retry": "Retry",
+    "confirm": {
+      "title": "Final order confirmation",
+      "recipient": "Recipient",
+      "note": "Payment in this version is simulated — confirming creates the order with the paid status."
+    },
+    "payPending": "Placing order…",
+    "itemsLabel": "Items",
+    "subtotalLabel": "Cart subtotal",
+    "shippingLabel": "Shipping",
+    "shippingAtNextStep": "Calculated at the next step",
+    "summaryTitle": "Order summary",
+    "validation": {
+      "required": "This field is required.",
+      "nameLength": "Name must be between 2 and 60 characters.",
+      "addressLength": "Address must be between 10 and 500 characters.",
+      "invalidPhone": "Phone must be a valid Iranian mobile number (09xxxxxxxxx)."
+    }
+  },
+  "success": {
+    "heading": "Your order has been placed successfully",
+    "trackingText": "Your order tracking number is <ltr>{code}</ltr>. Order details will be sent to you by SMS.",
+    "disclaimer": "Payment in this demo version was simulated.",
+    "backToShop": "Back to the store",
+    "home": "Home page",
+    "statusPaid": "Your payment was completed successfully.",
+    "total": "Order total",
+    "toman": "Toman"
+  },
+  "rating": {
+    "aria": "Rated {value} out of 5"
+  },
+  "phoneArt": {
+    "aria": "Product image preview"
+  },
+  "quantity": {
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity"
+  },
+  "common": {
+    "toman": "Toman",
+    "free": "Free",
+    "storageGb": "GB"
+  }
+}

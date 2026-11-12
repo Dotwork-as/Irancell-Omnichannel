@@ -1,0 +1,7 @@
+# Backend-local artifacts. Everything generic (env files, *.db, *.log, Go
+# test/profile output) is covered by the root .gitignore; only paths that
+# only make sense inside backend/ live here.
+# SQLite database directory — created automatically at startup
+/data/
+# Executable produced by `go build ./cmd/server` from this directory
+/server
